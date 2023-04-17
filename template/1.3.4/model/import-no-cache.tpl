@@ -1,7 +1,7 @@
 import (
 	"context"
 	"database/sql"
-	"github.com/SpectatorNan/gorm-zero/gormc"
+	"github.com/shaozi17/gorm-zero/gormc"
 	"strings"
 	{{if .time}}"time"{{end}}
 

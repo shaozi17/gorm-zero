@@ -1,6 +1,6 @@
 import (
 	"context"
-	"github.com/SpectatorNan/gorm-zero/gormc"
+	"github.com/shaozi17/gorm-zero/gormc"
 	{{if .containsDbSql}}"database/sql"{{end}}
 	{{if .time}}"time"{{end}}
 

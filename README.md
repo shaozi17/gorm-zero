@@ -8,7 +8,7 @@
 
 - add the dependent
 ```shell
-go get github.com/SpectatorNan/gorm-zero
+go get github.com/shaozi17/gorm-zero
 ```
 - replace  template/model in your project with gorm-zero/template/{goctl version}/model
 - generate
@@ -55,4 +55,4 @@ func NewServiceContext(c config.Config) *ServiceContext {
 ```
 
 ## Usage Example
-- go zero model example link: [gorm-zero-example](https://github.com/SpectatorNan/gorm-zero-example)
+- go zero model example link: [gorm-zero-example](https://github.com/shaozi17/gorm-zero-example)

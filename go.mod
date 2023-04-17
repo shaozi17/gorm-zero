@@ -1,4 +1,4 @@
-module github.com/SpectatorNan/gorm-zero
+module github.com/shaozi17/gorm-zero
 
 go 1.16
 
@@ -11,4 +11,4 @@ require (
 	gorm.io/gorm v1.24.5
 )
 
-//replace github.com/zeromicro/go-zero v1.4.2 => github.com/SpectatorNan/go-zero v1.2.5-0.20221201151248-db1f09d9826d
+//replace github.com/zeromicro/go-zero v1.4.2 => github.com/shaozi17/go-zero v1.2.5-0.20221201151248-db1f09d9826d
