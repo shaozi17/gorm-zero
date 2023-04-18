@@ -3,10 +3,11 @@ package gormc
 import (
 	"errors"
 	"fmt"
+	"time"
+
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
-	"time"
 )
 
 type Mysql struct {
