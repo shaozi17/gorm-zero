@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/shaozi17/gorm-zero/gormc/plugin"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
@@ -48,9 +49,11 @@ func ConnectMysql(m Mysql) (*gorm.DB, error) {
 	}
 	newLogger := newDefaultGormLogger(&m)
 	db, err := gorm.Open(mysql.New(mysqlCfg), &gorm.Config{
-		//Logger: logger.Default.LogMode(logger.Info),
 		Logger: newLogger,
 	})
+
+	db.Use(&plugin.GormTracingPlugin{})
+
 	if err != nil {
 		return nil, err
 	} else {
